@@ -1,0 +1,23 @@
+<h1>Ejercicio 16</h1>
+<p>Crea una directiva <code>validate-par</code> que agregue una validación de número par.
+
+<h2>Resultado</h2>
+<form name="myForm">
+  <input type="text" name="numero" ng-model="numero" validate-par>
+  <span ng-show="myForm.numero.$error.par">¡Debe ser par!</span>
+  <span ng-show="!myForm.numero.$error.vacio">¡está vacío!</span>
+</form>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;form name="myForm"&gt;
+    &lt;input type="text" name="numero" ng-model="numero"  validate-par&gt;
+    &lt;span ng-show="myForm.numero.$error.par"&gt;¡Debe ser par!&lt;/span&gt;
+  &lt;/form&gt;
+</pre>
+<hr>
+
+<a href="#/15">Anterior</a>
+|
+<a href="#/17">Siguiente</a>

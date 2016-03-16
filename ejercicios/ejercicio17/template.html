@@ -1,0 +1,26 @@
+<h1>Ejercicio 17</h1>
+<p>Crea una directiva <code>validate-soloemes</code> que agregue una validación
+  asíncrona.
+<p>La validación debe tardar un segundo y se pasará si son sólo emes.
+
+<h2>Resultado</h2>
+<form name="myForm">
+  <input type="text" name="emes" ng-model="emes" validate-soloemes>
+  <span ng-show="myForm.emes.$pending.soloEmes">Validando si son sólo emes...</span>
+  <span ng-show="myForm.emes.$error.soloEmes">¡Deben ser solo emes!</span>
+</form>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;form name="myForm"&gt;
+    &lt;input type="text" name="emes" ng-model="emes" validate-par&gt;
+    &lt;span ng-show="myForm.emes.$pending.soloEmes"&gt;Validando si son sólo emes...&lt;/span&gt;
+    &lt;span ng-show="myForm.emes.$error.soloEmes"&gt;¡Deben ser solo emes!&lt;/span&gt;
+  &lt;/form&gt;
+</pre>
+<hr>
+
+<a href="#/16">Anterior</a>
+|
+<a href="#/18">Siguiente</a>

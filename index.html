@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="directivas">
+  <head>
+      <title>Directivas con AngularJS</title>
+      <link rel="stylesheet" type="text/css" href="src/styles.css" />
+      <script src="node_modules/angular/angular.js"></script>
+      <script src="node_modules/angular-route/angular-route.js"></script>
+      <script src="src/directivas.app.js"></script>
+      <script>
+      var numEjercicios = 26;
+      (function(){
+        var s = 'script'
+        for(var i = 0; i < numEjercicios; i++ ){
+          document.write(`<${s} src='ejercicios/ejercicio${i}/controller.js'></${s}>
+                          <${s} src='ejercicios/ejercicio${i}/ejercicio.js'></${s}>`);
+        }
+      }());
+      </script>
+      <script src="src/directivas.const.js"></script>
+      <script src="src/directivas.routes.js"></script>
+  </head>
+  <body>
+    <ng-view></ng-view>
+  </body>
+</html>

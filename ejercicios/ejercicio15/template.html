@@ -1,0 +1,36 @@
+<h1>Ejercicio 15</h1>
+<p>Crea una directiva “ejercicio-heroes5” como las anteriores pero:
+<ul>
+  <li>tendrá un atributo <code>heroe-seleccionado="vm.seleccionado = $heroe"</code>
+  <li>en el html externo a la directiva se pintará el valor de <code>vm.seleccionado</code>.
+  <li>dentro de la directiva, junto a cada nombre aparece un botón con el texto “Seleccionar”.
+  <li>al hacer click en el botón, se invocará la expresión del atributo <code>heroe-seleccionado</code>
+    pasando el heroe asociado en la variable $heroe.
+  <li>usar también sintaxis “controllerAs” y el “bindToController”
+ </ul>
+
+<h2>Resultado</h2>
+<ejercicio-heroes5
+  equipo='vm.listadoHeroes'
+  heroe-seleccionado="heroe = $heroe; vm.seleccionado = $heroe"
+  ></ejercicio-heroes5>
+
+
+  <p>Héroe seleccionado:
+    {{vm.seleccionado.nombre}}</p>
+  <p>Héroe seleccionado:
+    {{heroe.nombre}}</p>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;ejercicio-heroes5 equipo='vm.listadoHeroes'
+    heroe-seleccionado="heroe = $heroe; vm.seleccionado = $heroe"&gt;&lt;/ejercicio-heroes5&gt;
+  Héroe seleccionado: {{"{{"}}vm.seleccionado.nombre}}
+  Héroe seleccionado: {{"{{"}}v}}
+</pre>
+<hr>
+
+<a href="#/14">Anterior</a>
+|
+<a href="#/16">Siguiente</a>

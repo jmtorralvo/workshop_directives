@@ -1,0 +1,25 @@
+<h1>Ejercicio 18</h1>
+<p>Crea una directiva <code>seleccion-superheroes</code>
+<p>La directiva pintará tres botones que setearán el valor de ngModel a:
+    {nombre: "Wolverine"}, {nombre: "Beast"}, {nombre: "Spiderman"}, {nombre: "Superman"}
+
+
+<h2>Resultado</h2>
+<form name="myForm">
+  <seleccion-superheroes ng-model="vm.superheroe"></seleccion-superheroes>
+  <p>Superhéroe seleccionado: {{vm.superheroe.nombre}}</p>
+</form>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;form name="myForm"&gt;
+    &lt;seleccion-superheroes ng-model="vm.superheroe"&gt;&lt;/seleccion-superheroes&gt;
+    &lt;p&gt;Superhéroe seleccionado: {{vm.superheroe.nombre}}&lt;/p&gt;
+  &lt;/form&gt;
+</pre>
+<hr>
+
+<a href="#/17">Anterior</a>
+|
+<a href="#/19">Siguiente</a>

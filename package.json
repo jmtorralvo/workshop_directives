@@ -1,0 +1,15 @@
+{
+  "name": "workshopdirectivas",
+  "version": "0.0.1",
+  "description": "Workshop de directivas",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gonzalo Ruiz de Villa <gonzaloruizdevilla@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-route": "^1.4.9"
+  }
+}

@@ -1,0 +1,35 @@
+<h1>Ejercicio 20</h1>
+<p>Crea una directiva <code>ejercicio-tarjeta</code>
+<p>La directiva tiene un atributo titulo y usara transclusión.
+<p>La plantilla tendra un h3 con el titulo y mas una etiqueta <code>content</code>
+<p>El contenido transcluido se obtiene invocando a la función que link
+  recibe como quinto y último argumento de la función
+<p>El contenido transcluido se agrega (append) a content
+
+
+
+<h2>Resultado</h2>
+<ejercicio-tarjeta titulo="vm.titulo">
+  <p>Contenido transcluido</p>
+  <ol>
+    <li>Uno</li>
+    <li>Dos</li>
+  </ol>
+</ejercicio-tarjeta>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;ejercicio-tarjeta titulo="vm.titulo"&gt;
+    &lt;p&gt;Contenido transcluido&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Uno&lt;/li&gt;
+      &lt;li&gt;Dos&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/ejercicio-tarjeta&gt;
+</pre>
+<hr>
+
+<a href="#/19">Anterior</a>
+|
+<a href="#/21">Siguiente</a>

@@ -1,0 +1,32 @@
+<h1>Ejercicio 22</h1>
+<p>Crea una directiva <code>ejercicio-tarjeta3</code>
+<p>La directiva es como en el ejercicio 20, pero además al scope
+  transcluido le agregará una propiedad <code>hoy</code> con la fecha actual.
+
+
+
+<h2>Resultado</h2>
+<ejercicio-tarjeta3 titulo="vm.titulo">
+  <p>Contenido transcluido hoy día: {{hoy | date:'dd/MM/yyyy'}}</p>
+  <ol>
+    <li>Uno</li>
+    <li>Dos</li>
+  </ol>
+</ejercicio-tarjeta3>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;ejercicio-tarjeta3 titulo="vm.titulo"&gt;
+    &lt;p&gt;Contenido transcluido hoy día: {{'{{'}}hoy | date:'dd/MM/yyyy'}}&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Uno&lt;/li&gt;
+      &lt;li&gt;Dos&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/ejercicio-tarjeta3&gt;
+</pre>
+<hr>
+
+<a href="#/21">Anterior</a>
+|
+<a href="#/23">Siguiente</a>

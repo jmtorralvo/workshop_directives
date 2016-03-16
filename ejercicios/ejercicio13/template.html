@@ -1,0 +1,29 @@
+<h1>Ejercicio 13</h1>
+<p>Crea una directiva “ejercicio-heroes3”, como la anterior pero con un check
+  antes de cada nombre con ng-model=”miembro.favorito”.
+  Fuera de la directiva se pintarán los miembros marcados como favoritos.
+
+<hr>
+
+<h2>Resultado</h2>
+<ejercicio-heroes3 equipo='vm.listadoHeroes'></ejercicio-heroes3>
+<!--{{vm.listadoHeroes}}-->
+<p>Héroes favoritos:</p>
+<ul>
+	<!--<li ng-repeat="heroe in vm.listadoHeroes | soloFavoritos">{{heroe.nombre}}</li>-->
+  	<li ng-repeat="heroe in vm.listadoHeroes | filter:{fav:true}">{{heroe.nombre}}</li>
+</ul>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;ejercicio-heroes3 equipo='vm.listadoHeroes'&gt;&lt;/ejercicio-heroes3&gt;
+  &lt;ul&gt;
+    &lt;li ng-repeat="heroe in vm.listadoHeroes | soloFavoritos"&gt;{{heroe.nombre}}&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+<hr>
+
+<a href="#/12">Anterior</a>
+|
+<a href="#/14">Siguiente</a>

@@ -1,0 +1,29 @@
+<h1>Ejercicio 23</h1>
+<p>Crea una directiva <code>ejercicio-tarjetas</code> que tenga un atributo
+  <code>equipo</code> que recibirá un array de elementos y otro atributo <code>nombreEquipo</code>
+<p>La directiva actuará de forma parecida a un ng-repeat.
+<p>Primero pintará en un <code>h3</code> el nombre del equipo
+<p>Y a continuación repetirá el contenido transcluido tantas veces
+  como elementos del array recibido, poniendo cada elemento en el scope
+  transcluido con el nombre <code>$heroe</code>, y el índice de iteracion con
+  <code>$index</code>
+
+
+
+<h2>Resultado</h2>
+<ejercicio-tarjetas nombreEquipo="vm.nombreEquipo" equipo="vm.equipo">
+  <p>El miembro nº {{$index}} del {{vm.nombreEquipo}} es {{$heroe.nombre}}</p>
+</ejercicio-tarjetas>
+<hr>
+
+<h3>Código ejecutado</h3>
+<pre>
+  &lt;ejercicio-tarjetas nombreEquipo="vm.nombreEquipo" equipo="vm.equipo"&gt;
+    &lt;p&gt;El miembro nº {{$index}} del {{vm.nombreEquipo}} es {{$heroe.nombre}}&lt;/p&gt;
+  &lt;/ejercicio-tarjetas&gt;
+</pre>
+<hr>
+
+<a href="#/22">Anterior</a>
+|
+<a href="#/24">Siguiente</a>
