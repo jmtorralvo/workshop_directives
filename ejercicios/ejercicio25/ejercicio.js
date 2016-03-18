@@ -17,19 +17,33 @@
           onAumenta: '&'
         },
         controllerAs:'vm',
-        bindToController: true,
         controller: Controller
       };
       return ddo;
     })
     .factory('testDirectiva', function ($compile, $rootScope, $timeout, $q){
       return () => {
-        $timeout(() => {
+        let scope = $rootScope.$new();
 
+        scope.guardaValor = function ($valor) {
+          scope.contador = $valor;
+        };
+
+        let elemento = angular.element(`
+            <ejercicio-test on-aumenta="guardaValor($valor)"></ejercicio-test>
+          `);
+
+        $timeout(() => {
+          $compile(elemento)(scope);
         }, 0, false);
 
         return $q((resolve, reject) => {
           $timeout(()=>{
+            let anchor = elemento.find('a');
+            anchor[0].click();
+
+            if (scope.contador === 1) resolve({resultado: 'OK'});
+            else reject({resultado: 'KO'});
 
           },100)
         });

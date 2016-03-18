@@ -10,8 +10,8 @@
 <!--{{vm.listadoHeroes}}-->
 <p>Héroes favoritos:</p>
 <ul>
-	<!--<li ng-repeat="heroe in vm.listadoHeroes | soloFavoritos">{{heroe.nombre}}</li>-->
-  	<li ng-repeat="heroe in vm.listadoHeroes | filter:{fav:true}">{{heroe.nombre}}</li>
+	<li ng-repeat="heroe in vm.listadoHeroes | soloFavoritos">{{heroe.nombre}}</li>
+  	<!--<li ng-repeat="heroe in vm.listadoHeroes | filter:{fav:true}">{{heroe.nombre}}</li>-->
 </ul>
 <hr>
 

@@ -3,7 +3,8 @@
     .module('directivas')
     .controller('Ejercicio20Ctrl', Controller);
 
-  function Controller(){
+  function Controller() {
     this.titulo = "El título";
+    this.lista = ['Uno', 'Dos'];
   }
 }());

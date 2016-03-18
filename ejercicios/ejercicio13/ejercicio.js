@@ -23,8 +23,6 @@
         .module('directivas')
         .filter('soloFavoritos',
             () => 
-              (input) => {
-                console.log(input);  
-              }     
+              (input) => input.filter(input=>input.fav)
         );
 }());

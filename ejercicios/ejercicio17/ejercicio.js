@@ -14,12 +14,14 @@
                 controllers.$asyncValidators.soloEmes = (modelValue, value)=> {
                 	let def = $q.defer();
                     if (controllers.$isEmpty(modelValue)) {
-                        return $q.when();
+                       //Devuelve una promesa resuelta, pero que no ha sido aceptada o rechazada. 
+                       return $q.when();
                     }
                     $timeout( () => {
                         (value.split('').filter((el)=>el==='m').length < value.length) ? def.reject()
                         																: def.resolve();
                     }, 1000);
+
                     return def.promise;
                 };
             }
